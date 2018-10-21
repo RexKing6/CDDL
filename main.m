@@ -1,8 +1,5 @@
 clear,clc;
 
-% 最近自己又重新看了一遍函数，感觉问题很有可能处在FDDL_Update函数，这个是直接拿的FDDL过来用，具体代码看不懂，
-% 当时考虑到这里面不涉及梯度什么的，而且代码当时粗粗一看没有涉及很具体的东西，应该通用，就直接拿过来用了，现在结合图像看来，有可能问题处在这里。
-
 % load('continuous_AwA.mat')
 % 使用AwA连续属性
 
@@ -68,7 +65,7 @@ teffpca=ccc';
 
 % 下面是参数设置
 opts.show          =   true; % 是否画图
-opts.wayInit       =   'random'; % 字典初始化方式，原本FDDL初始化方式是pca，但我用的时候有报错，就改成了随机初始化，FDDL_INID里有这两种初始化方式
+opts.wayInit       =   'random'; % 字典初始化方式，原本FDDL初始化方式是pca，改成了随机初始化，FDDL_INID里有这两种初始化方式
 opts.lambda1       =   0.2125; 
 opts.lambda2       =   0; % FDDL原本的f(x)系数，但这里我们第一轮没有f(x)，所以取为0
 opts.nIter         =   4; % 迭代次数
