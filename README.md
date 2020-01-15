@@ -1,4 +1,4 @@
-# Zero-Shot-CDDL
+# CDDL
 《Zero-Shot Image Classification via Coupled Discriminative Dictionary Learning》LSMS-ICSEE2017。论文代码很大程度参考[FDDL](http://www4.comp.polyu.edu.hk/~cslzhang/papers.htm)和[SSE](https://zimingzhang.wordpress.com/source-code/)。
 
 ## Dateset
